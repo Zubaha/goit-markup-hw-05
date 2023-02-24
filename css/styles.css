@@ -530,12 +530,22 @@ p, h1, h2, h3, h4, h5, h6, ul {
     position: absolute;
     right: 24px;
     top: 24px;
+
+    transition: border 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    border: none;
+    background-color: var(--active-state);
+    fill: #ffffff;
 }
 
 .modal-button-svg {
     width: 8px;
     height: 8px;
-    fill: #000;
 }
 
 .backdrop.is-hidden {
@@ -666,7 +676,8 @@ p, h1, h2, h3, h4, h5, h6, ul {
     color: var(--background-ligh);
 }
 
-.portfolio-image-item-link:hover .portfolio-overlay   {
+.portfolio-image-item-link:hover .portfolio-overlay,
+.portfolio-image-item-link:focus .portfolio-overlay   {
     transform: translateY(0);
 }
 
