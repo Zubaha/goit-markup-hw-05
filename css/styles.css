@@ -522,6 +522,7 @@ p, h1, h2, h3, h4, h5, h6, ul {
     background-color: var(--secondary-buttons);
     border-radius: 50%;
     cursor: pointer;
+    fill: #000;
 
     display: flex;
     justify-content: center;
